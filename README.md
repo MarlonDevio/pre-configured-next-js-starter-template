@@ -1,36 +1,45 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Starting Boilerplate components and configuration for Nextjs 14
 
-## Getting Started
+This project is a starting template for Nextjs 14 with included components, framer motion, tailwind, typescript twMerge, and clsx configured and set to go.
 
-First, run the development server:
+## Table of Contents
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- [Starting Boilerplate components and configuration for Nextjs 14](#starting-boilerplate-components-and-configuration-for-nextjs-14)
+  - [Table of Contents](#table-of-contents)
+  - [Description](#description)
+  - [Features](#features)
+  - [Installation](#installation)
+  - [Usage](#usage)
+  - [Contributing](#contributing)
+  - [License](#license)
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Description
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+This project serves as a boilerplate for starting new projects with pre-configured components, framer motion, tailwind, typescript twMerge, and clsx. It is a work in progress and ongoing, meaning that it will continue to be updated and improved over time.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## Features
 
-## Learn More
+- Pre-configured components
+- Framer Motion for animations
+- Tailwind CSS for styling
+- TypeScript for type safety
+- twMerge for merging Tailwind CSS classes
+- clsx for conditional class names
 
-To learn more about Next.js, take a look at the following resources:
+## Installation
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+1. Clone the repository: `git clone https://github.com/your-username/your-repo.git`
+2. Install dependencies: `npm install`
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## Usage
 
-## Deploy on Vercel
+1. Start the development server: `npm run dev`
+2. Open your browser and navigate to `http://localhost:3000`
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Contributing
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Contributions are welcome! If you have any suggestions, bug reports, or feature requests, please open an issue or submit a pull request.
+
+## License
+
+This project is licensed under the [MIT License](LICENSE).
