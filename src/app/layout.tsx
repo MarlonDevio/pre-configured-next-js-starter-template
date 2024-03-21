@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import { Montserrat } from 'next/font/google';
 import './globals.css';
 import { cn } from '@/lib/utils/cn';
+import { ThemeContextProvider } from './ThemeContext';
 const montserrat = Montserrat({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
@@ -17,7 +18,7 @@ export default function RootLayout({
   return (
     <html lang='en'>
       <body className={cn(montserrat.className, 'antialiased')}>
-        {children}
+        <ThemeContextProvider>{children}</ThemeContextProvider>
       </body>
     </html>
   );

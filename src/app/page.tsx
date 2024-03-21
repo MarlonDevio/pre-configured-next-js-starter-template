@@ -10,18 +10,7 @@ export default function Home() {
   const { darkMode, setDarkMode } = useContext(ThemeContext);
   return (
     <ThemeContextProvider>
-      <main>
-        <SparklesSection />
-        <ScrollAnimation>
-          <h2 className=''>Hello World</h2>
-          <button
-            className='btn'
-            onClick={() => setDarkMode(!darkMode)}
-          >
-            Theme{' '}
-          </button>
-        </ScrollAnimation>
-      </main>
+      <main></main>
     </ThemeContextProvider>
   );
 }
