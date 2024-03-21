@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 import { Montserrat } from 'next/font/google';
 import './globals.css';
 import { cn } from '@/lib/utils/cn';
-import { ThemeContextProvider } from './ThemeContext';
+import { ThemeProvider } from 'next-themes';
 const montserrat = Montserrat({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
@@ -16,9 +16,19 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang='en'>
+    <html
+      lang='en'
+      suppressHydrationWarning
+    >
       <body className={cn(montserrat.className, 'antialiased')}>
-        <ThemeContextProvider>{children}</ThemeContextProvider>
+        <ThemeProvider
+          attribute='class'
+          defaultTheme='system'
+          enableSystem
+          disableTransitionOnChange
+        >
+          {children}
+        </ThemeProvider>
       </body>
     </html>
   );
